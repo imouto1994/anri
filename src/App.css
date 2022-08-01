@@ -113,6 +113,34 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .App {
   padding: 24px 32px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.App-group {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 24px;
+  margin-right: 12px;
+}
+
+.App-link-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.App-link-github {
+  background: white;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+
+.App-link-github-icon {
+  height: 16px;
 }
 
 .App-link {
@@ -120,21 +148,56 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
-  color: white;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-right: 12px;
-  margin-bottom: 24px;
-  padding: 8px 24px;
-  background: linear-gradient(
-    45deg,
-    #3bade3 0%,
-    #576fe6 25%,
-    #9844b7 51%,
-    #ff357f 100%
-  );
-  box-shadow: 0 4px 15px 0 rgb(126 52 161 / 75%);
-  border-radius: 48px;
+  padding: 8px 24px 8px 8px;
+  background-size: 500% auto;
+  border-top-right-radius: 48px;
+}
+
+.App-link-wrapper:not(:first-child) {
+  border-top: 1px solid black;
+}
+
+.App-group:nth-child(10n + 1) .App-link {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+.App-group:nth-child(10n + 2) .App-link {
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+
+.App-group:nth-child(10n + 3) .App-link {
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
+
+.App-group:nth-child(10n + 4) .App-link {
+  background: linear-gradient(to right, #78ffd6, #007991);
+}
+
+.App-group:nth-child(10n + 5) .App-link {
+  background: linear-gradient(to right, #ffc371, #ff5f6d);
+}
+
+.App-group:nth-child(10n + 6) .App-link {
+  background: linear-gradient(to right, #fdfc47, #24fe41);
+}
+
+.App-group:nth-child(10n + 7) .App-link {
+  background: linear-gradient(to right, #f4c4f3, #fc67fa);
+}
+
+.App-group:nth-child(10n + 8) .App-link {
+  background: linear-gradient(to right, #a5fecb, #20bdff, #5433ff);
+}
+
+.App-group:nth-child(10n + 9) .App-link {
+  background: linear-gradient(to right, #e100ff, #7f00ff);
+}
+
+.App-group:nth-child(10n + 10) .App-link {
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
 }
 
 .App-iframe {
